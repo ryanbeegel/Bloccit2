@@ -22,7 +22,7 @@ end
 topics = Topic.all
 
 # Create Posts
-300.times do
+100.times do
   Post.create(
     user:   users.sample,
     topic:  topics.sample,
@@ -33,7 +33,7 @@ end
 posts = Post.all
 
 # Create Comments
-300.times do
+100.times do
   Comment.create(
     user: users.sample,
     post: posts.sample,
